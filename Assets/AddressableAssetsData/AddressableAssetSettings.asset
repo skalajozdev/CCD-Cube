@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 5a47ded21474b444b9e66ff15db73402
   m_currentHash:
     serializedVersion: 2
-    Hash: 10616609c01eb4608326e5aaef623c1d
+    Hash: ebdf5882adefd8f4a54215b9f042cf67
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
@@ -69,10 +69,6 @@ MonoBehaviour:
         m_Value: CCDBuildData/8bfed975-0daf-437a-baef-628ed69cdb60/893aa31f-628c-4065-aa9d-06bc446fe653/Production
       - m_Id: 52f2650811934ee44aa83ae5176bc28c
         m_Value: https://702bce93-be9f-4e0e-a991-a7fa5a2ec49e.client-api.unity3dusercontent.com/client_api/v1/environments/development/buckets/893aa31f-628c-4065-aa9d-06bc446fe653/release_by_badge/Production/entry_by_path/content/?path=
-      - m_Id: 565cb92b01452de4cba863bcb9bdc733
-        m_Value: C:/Users/skala/Documents/CCD-Cube/Assets
-      - m_Id: e054ff9ad4a653c478fa1fb6c1318d4e
-        m_Value: C:/Users/skala/Documents/CCD-Cube/Assets
     - m_InheritedParent: 
       m_Id: fa05a71d6290ed64183e028c35c0aa5d
       m_ProfileName: DevelopmentProfile
@@ -84,31 +80,9 @@ MonoBehaviour:
       - m_Id: 5e439babc96295c4c8c7f9d79819928c
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 68ee7ce5d2ebcf4489b890750c796cab
-        m_Value: ServerData/[BuildTarget]
+        m_Value: CCDBuildData/8bfed975-0daf-437a-baef-628ed69cdb60/51634cbe-475c-46d6-9247-ba9ce0558ded/Production
       - m_Id: 52f2650811934ee44aa83ae5176bc28c
-        m_Value: https://702bce93-be9f-4e0e-a991-a7fa5a2ec49e.client-api.unity3dusercontent.com/client_api/v1/environments/development/buckets/f09361a0-a230-46ae-82c4-75d516ea8f39/release_by_badge/Production/entry_by_path/content/?path=
-      - m_Id: 565cb92b01452de4cba863bcb9bdc733
-        m_Value: CCDBuildData/8bfed975-0daf-437a-baef-628ed69cdb60/4f15e291-efbb-4da9-a503-180c89b5b77b/latest
-      - m_Id: e054ff9ad4a653c478fa1fb6c1318d4e
-        m_Value: https://702bce93-be9f-4e0e-a991-a7fa5a2ec49e.client-api.unity3dusercontent.com/client_api/v1/environments/development/buckets/4f15e291-efbb-4da9-a503-180c89b5b77b/release_by_badge/latest/entry_by_path/content/?path=
-    - m_InheritedParent: 
-      m_Id: 30bf7c0232d74244b88f1110545e3778
-      m_ProfileName: CustomProfile
-      m_Values:
-      - m_Id: cc3ca23e5f24ef241a3ec5f71b40d373
-        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
-      - m_Id: 7d2baf1c40a254147b6cefa5606f0718
-        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
-      - m_Id: 5e439babc96295c4c8c7f9d79819928c
-        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
-      - m_Id: 68ee7ce5d2ebcf4489b890750c796cab
-        m_Value: CCDBuildData/950109c8-d023-4b60-8ca2-fc4c38e5eb54/b55e817a-f326-41c4-b13e-a88d59b99e0c/latest
-      - m_Id: 52f2650811934ee44aa83ae5176bc28c
-        m_Value: https://702bce93-be9f-4e0e-a991-a7fa5a2ec49e.client-api.unity3dusercontent.com/client_api/v1/environments/production/buckets/b55e817a-f326-41c4-b13e-a88d59b99e0c/release_by_badge/latest/entry_by_path/content/?path=
-      - m_Id: 565cb92b01452de4cba863bcb9bdc733
-        m_Value: C:/Users/skala/Documents/CCD-Cube/Assets
-      - m_Id: e054ff9ad4a653c478fa1fb6c1318d4e
-        m_Value: C:/Users/skala/Documents/CCD-Cube/Assets
+        m_Value: https://702bce93-be9f-4e0e-a991-a7fa5a2ec49e.client-api.unity3dusercontent.com/client_api/v1/environments/development/buckets/51634cbe-475c-46d6-9247-ba9ce0558ded/release_by_badge/Production/entry_by_path/content/?path=
     m_ProfileEntryNames:
     - m_Id: cc3ca23e5f24ef241a3ec5f71b40d373
       m_Name: BuildTarget
@@ -124,12 +98,6 @@ MonoBehaviour:
       m_InlineUsage: 0
     - m_Id: 52f2650811934ee44aa83ae5176bc28c
       m_Name: Remote.LoadPath
-      m_InlineUsage: 0
-    - m_Id: 565cb92b01452de4cba863bcb9bdc733
-      m_Name: CustomRemote.BuildPath
-      m_InlineUsage: 0
-    - m_Id: e054ff9ad4a653c478fa1fb6c1318d4e
-      m_Name: CustomRemote.LoadPath
       m_InlineUsage: 0
     m_ProfileVersion: 1
   m_LabelTable:

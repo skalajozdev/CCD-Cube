@@ -5,26 +5,26 @@ using Unity.Services.Core;
 using UnityEngine;
 using Unity.Services.Core.Environments;
 using UnityEditor;
+using Sirenix.OdinInspector;
 
 public class RemoteConfig : MonoBehaviour
 {
     public struct userAttributes { }
     public struct appAttributes { }
 
+    [BoxGroup("Environment Info")]
+    [EnumToggleButtons]
+    public EnvironmentState environment;
+    
     private string badge;
-    private string environment;
     private string bucketId;
-
-    public bool devMode;
-
+    
     async Task InitializeRemoteConfigAsync()
     {
         var options = new InitializationOptions();
-
-        if (devMode)
-            options.SetEnvironmentName("development");
-        else
-            options.SetEnvironmentName("production");
+        
+        // set environment
+        SetEnvironment(options);
 
         // initialize handlers for unity game services
         await UnityServices.InitializeAsync(options);
@@ -54,13 +54,34 @@ public class RemoteConfig : MonoBehaviour
         Debug.Log("RemoteConfigService.Instance.appConfig fetched: " + RemoteConfigService.Instance.appConfig.config.ToString());
 
         badge = RemoteConfigService.Instance.appConfig.GetString("badge");
-        environment = RemoteConfigService.Instance.appConfig.GetString("environment");
         bucketId = RemoteConfigService.Instance.appConfig.GetString("bucketId");
-
-        CcdManager.Badge = badge;
-        CcdManager.EnvironmentName = environment;
-        CcdManager.BucketId = bucketId;
-
-        //Debug.Log("Init of CCD-M bucketId: " + CcdManager.BucketId + " env: " + CcdManager.EnvironmentName + " badge: " + CcdManager.Badge);
+        
+        //CcdManager.BucketId = bucketId;
+        //CcdManager.Badge = badge;
     }
+    
+    private void SetEnvironment(InitializationOptions options)
+    {
+        switch (environment)
+        {
+            case EnvironmentState.development:
+                //CcdManager.EnvironmentName = environment.ToString();
+                options.SetEnvironmentName(environment.ToString());
+                break;
+            case EnvironmentState.production:
+                //CcdManager.EnvironmentName = environment.ToString();
+                options.SetEnvironmentName(environment.ToString());
+                break;
+            default:
+                options.SetEnvironmentName("development");
+                break;
+        }
+    }
+}
+
+
+public enum EnvironmentState
+{
+    development,
+    production
 }
