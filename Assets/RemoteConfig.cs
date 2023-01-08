@@ -16,8 +16,9 @@ public class RemoteConfig : MonoBehaviour
     [EnumToggleButtons]
     public EnvironmentState environment;
     
-    private string badge;
-    private string bucketId;
+    private string badgeString;
+    private string bucketIdString;
+    private string environmentString;
     
     async Task InitializeRemoteConfigAsync()
     {
@@ -53,11 +54,12 @@ public class RemoteConfig : MonoBehaviour
     {
         Debug.Log("RemoteConfigService.Instance.appConfig fetched: " + RemoteConfigService.Instance.appConfig.config.ToString());
 
-        badge = RemoteConfigService.Instance.appConfig.GetString("badge");
-        bucketId = RemoteConfigService.Instance.appConfig.GetString("bucketId");
-        
-        //CcdManager.BucketId = bucketId;
-        //CcdManager.Badge = badge;
+        badgeString = RemoteConfigService.Instance.appConfig.GetString("badge");
+        bucketIdString = RemoteConfigService.Instance.appConfig.GetString("bucketId");
+
+        CcdManager.BucketId = bucketIdString;
+        CcdManager.Badge = badgeString;
+        CcdManager.EnvironmentName = environmentString;
     }
     
     private void SetEnvironment(InitializationOptions options)
@@ -65,15 +67,16 @@ public class RemoteConfig : MonoBehaviour
         switch (environment)
         {
             case EnvironmentState.development:
-                //CcdManager.EnvironmentName = environment.ToString();
+                environmentString = "development";
                 options.SetEnvironmentName(environment.ToString());
                 break;
             case EnvironmentState.production:
-                //CcdManager.EnvironmentName = environment.ToString();
+                environmentString = "production";
                 options.SetEnvironmentName(environment.ToString());
                 break;
             default:
                 options.SetEnvironmentName("development");
+                environmentString = "development";
                 break;
         }
     }

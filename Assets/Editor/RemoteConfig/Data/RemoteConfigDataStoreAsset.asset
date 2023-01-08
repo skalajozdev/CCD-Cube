@@ -12,24 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2c459b0f-744d-45b3-ba1e-7c2fc652e7fc\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"61c3867a-5d8b-4260-8c0c-6ece88cbd34e\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"badge\",\r\n      \"type\": \"string\",\r\n     
     \"value\": \"latest\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"d55a80de-c720-411b-84b1-e228bf43da86\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"environment\",\r\n      \"type\": \"string\",\r\n     
-    \"value\": \"development\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"f75639a1-4392-49b5-a884-c90489f79202\"\r\n    },\r\n    \"rs\":
+    \"entityId\": \"86253086-6d42-455a-8b18-48f0e36f9b5a\"\r\n    },\r\n    \"rs\":
     {\r\n      \"key\": \"bucketId\",\r\n      \"type\": \"string\",\r\n      \"value\":
-    \"893aa31f-628c-4065-aa9d-06bc446fe653\"\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2c459b0f-744d-45b3-ba1e-7c2fc652e7fc\"\r\n   
+    \"1a886620-6d0b-40e3-9462-91f80492740c\"\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"61c3867a-5d8b-4260-8c0c-6ece88cbd34e\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"badge\",\r\n      \"type\": \"string\",\r\n     
     \"value\": \"latest\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"d55a80de-c720-411b-84b1-e228bf43da86\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"environment\",\r\n      \"type\": \"string\",\r\n     
-    \"value\": \"development\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"f75639a1-4392-49b5-a884-c90489f79202\"\r\n    },\r\n    \"rs\":
+    \"entityId\": \"86253086-6d42-455a-8b18-48f0e36f9b5a\"\r\n    },\r\n    \"rs\":
     {\r\n      \"key\": \"bucketId\",\r\n      \"type\": \"string\",\r\n      \"value\":
-    \"893aa31f-628c-4065-aa9d-06bc446fe653\"\r\n    }\r\n  }\r\n]"
+    \"1a886620-6d0b-40e3-9462-91f80492740c\"\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"702bce93-be9f-4e0e-a991-a7fa5a2ec49e\",\r\n   
     \"name\": \"development\",\r\n    \"id\": \"8bfed975-0daf-437a-baef-628ed69cdb60\",\r\n   
     \"isDefault\": false,\r\n    \"createdAt\": \"2023-01-03T19:43:39Z\",\r\n   
